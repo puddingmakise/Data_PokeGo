@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>[NOT PUBLIC]-PokemonGo Western Australia</title>
+<!-- Page styles Material Design-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.indigo-pink.min.css">
+<script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+<script src = "poke.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBY-CayARjohoaI6_OSF32gR039guHq_Is&callback=initMap"></script>
+
+</head>
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        height: 100%;
+      }
+  </style>
+<body>
+<!-- Mat-Design-->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+		<!--Mat-Bar-->
+		<div class="android-header mdl-layout__header mdl-layout__header--waterfall">
+			<div class="mdl-layout__header-row">
+			  <span class="android-title mdl-layout-title">
+				<!--<img class="android-logo-image" src="images/android-logo.png">-->
+                <a class="mdl-navigation__link" href="/">Pokemon Go WA</a>
+			  </span>
+	
+			  <!-- Navigation -->
+			  <div class="android-navigation-container">
+				<nav class="android-navigation mdl-navigation">
+				  <a class="mdl-navigation__link mdl-typography--text-uppercase" href="/pokedex">Pokedex</a> <!--dokuWiki-->
+				  <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Get Involved</a>
+                  <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Blog</a>
+				  <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Contact Us</a>
+				</nav>
+			  </div>
+		  	</div>
+		</div>
+		<!--Mat-Bar-END-->
+		<!--PokeMap-->
+		<div id="map"></div>
+		<!--PokeMap-END-->
+			
+	</div>
+</body>
+</html>
